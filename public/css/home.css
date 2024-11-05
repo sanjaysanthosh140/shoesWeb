@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #000;
+    transition: background 0.2s ease-in-out;
+}
+
+.body-div{
+    width: 85%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 85%;
+    z-index: 9999;
+}
+
+.logo-img {
+    width: 170px;
+    height: 100px;
+    position: relative;
+    left: -20px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-item {
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    width: 40%;
+}
+
+.heading {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.product-img {
+    transform: rotate(-20deg);
+    width: 600px;
+    height: 700px;
+    position: relative;
+    top: -50px;
+}
+input value{
+    color: #fff;
+}
+
+.variants {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    bottom: 10px;
+    z-index: 9999;
+}
+
+.variant {
+    width: 90px;
+    height: 110px;
+    margin: 0 10px;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+
+.variant img {
+    width: 100%;
+    height: 100%;
+}
+
+.variant:hover {
+    position: relative;
+    top: -20px;
+    transition: 0.2s all ease-in;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* class for active product */
+.active {
+    position: relative;
+    top: -20px;
+    animation: activeProduct ease-in-out infinite 0.8s;
+}
+
+@keyframes activeProduct {
+    0%,
+    100% {
+        top: -20px;
+    }
+    50% {
+        top: -15px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 2em;
+}
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li a {
+    color: #7e7e7e;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+input{
+    color: #fff;
+}
+
+.fs2 {
+    background-color: #333;
+    color: #7e7e7e;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fs2-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+}
+
+.fs2-ul li {
+    margin: 0 10px;
+} 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40%;
+}
+
+.login-btn, 
+.signup-btn {
+  background-color: transparent;
+  border: 2px solid #333; 
+  color: #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.signup-btn {
+  background-color: #333;
+  color: white;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  opacity: 0.8; /* Slightly darker on hover */
+}
+

@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="/css/frvCarts.css" />
+
+<div class="header">
+  <div class="title">
+    <h4>FrV_CaRt</h4>
+  </div>
+</div>
+
+<div class="body">
+  <div class="container">
+
+    {{#each result}}
+    
+      <div class="card">
+        <div class="card-content">
+          <div class="top-bar">
+            <span>$
+              {{this.products.proPrice}}
+            </span>
+            <span class="float-right lnr lnr-heart"></span>
+          </div>
+          <div class="img">
+            <img src="/proImg/{{this.products._id}}.jpg" />
+          </div>
+        </div>
+        <div class="card-description">
+          <div class="title">
+            {{this.products.proname}}
+          </div>
+          <div class="cart">
+            <span class="lnr lnr-cart"></span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="span">
+            Q:
+            {{this.quantity}}
+          </div>
+          <div class="span">
+            BEATS
+          </div>
+          <div class="span">
+            <a href="/placeOrde">
+              <input
+                type="submit"
+                class="btn btn-success"
+                value="orderPlace"
+              /></a>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+  </div>
+
+</div>
+
+<script src="/js/frvCarts.js"></script>

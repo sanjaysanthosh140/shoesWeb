@@ -1,0 +1,72 @@
+
+<form action="/admin/addprod" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control" id="productName" name="productName" required>
+        <label for="productName">Product Price</label>
+        <input type="text" class="form-control" id="productName" name="productPrice" required>
+    </div>
+    <div class="form-group">
+        <label for="productImage">Product Image</label>
+        <input type="file" class="form-control-file" id="productImage" name="productImage" accept="image/*" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>
+
+<style>
+    form {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background-color: #fff;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .form-control {
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        padding: 8px;
+        width: 100%;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+
+    .form-control-file {
+        border: 1px solid #ddd;
+        padding: 6px;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
+
